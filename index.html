@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <!-- Lehe üldinfo -->
+  <meta charset="UTF-8">
+  <title>Anu E-pood</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- Lehe ülaosa, kus on menüü/navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        
+        <!-- Tekst logo asemel, peale vajutades viib kasutaja esilehele + Minimaalne stiil -->
+        <a href="#" class="site-title" onclick="navigate('home')" style="text-decoration: none; color: inherit; font-weight: bold; cursor: pointer;">
+          Anu e-pood
+        </a>
+        
+        <!-- Otsinguväli ja ostukorvi ikoon -->
+        <div class="navbar-right">
+          <input type="text" id="search-bar" placeholder="Otsi tooteid...">
+          <button class="cart-icon" onclick="navigate('cart')">🛒 Ostukorv</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero-sektsioon tutvustava tekstiga -->
+  <section id="hero-section">
+    <div class="container">
+      <h1>Tere tulemast!</h1>
+      <p>Leia parima hinnaga tooted meie unikaalsest valikust!</p>
+    </div>
+  </section>
+
+  <!-- Kategooriate menüü, mis on täiendatud JavaScriptiga -->
+  <div id="category-menu" class="filters"></div>
+
+  <!-- Esilehe vaade, kus on kuvatud kõik tooted -->
+  <section id="home-view" class="view home-view">
+    <div id="product-list" class="product-grid"></div>
+  </section>
+
+  <!-- Jalus, autoriõiguse info ja projekti kirjeldusega -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Anu Tõiste | Kõik õigused on kaitstud | Projekt tehtud API katsetamiseks programmeerimise aine raames</p>
+    </div>
+  </footer>
+
+  <!-- JavaScripti moodul, mis vastutab rakenduse funktsionaalsuse eest -->
+  <script type="module" src="src/app.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,79 @@
+// Ostukorvi stiil
+
+.cart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-title {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .cart-item-image img {
+    width: 100px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+  }
+  .cart-total span {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #1a202c;
+  }
+  .cart-actions {
+    display: flex;
+    gap: 15px;
+  }
+  .checkout-button, .continue-shopping-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+  }
+  .checkout-button {
+    background-color: #3b82f6;
+    color: white;
+    &:hover {
+      background-color: #2563eb;
+    }
+  }
+  .continue-shopping-button {
+    background-color: #ddd;
+    color: #333;
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+  

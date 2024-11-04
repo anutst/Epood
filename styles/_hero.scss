@@ -1,0 +1,33 @@
+// Hero sektsiooni stiil
+
+#hero-section {
+    background: linear-gradient(135deg, #2b6cb0, #3182ce);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+    h1 {
+      font-size: 3em;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+    .shop-button {
+      padding: 12px 25px;
+      background: white;
+      color: #3182ce;
+      border: 2px solid white;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 14px;
+      &:hover {
+        background: #3182ce;
+        color: white;
+      }
+    }
+  }
+  
